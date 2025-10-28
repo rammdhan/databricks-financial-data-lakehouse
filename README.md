@@ -1,22 +1,22 @@
 # Databricks Financial Data Lakehouse
 
-**End-to-End Data Engineering Project** for transforming raw SEC financial filings into **AI-ready data** using the **Databricks Lakehouse Platform (Free Edition)**.
+**End-to-End Data Engineering Project** for transforming raw SEC 10-K filings into **AI-ready knowledge documents** using the **Databricks Lakehouse Platform**.
 
 ---
 
 ## Overview
 
-This project demonstrates how a **Data Engineer** can build a **streaming data pipeline** that ingests, transforms, and prepares financial reports from the U.S. Securities and Exchange Commission (SEC) into a structured, queryable, and AI-ready dataset.
-The final output is a **Lakehouse architecture** that supports **Retrieval-Augmented Generation (RAG)** use cases — enabling AI chatbots or analytical models to access structured financial knowledge efficiently.
+This project demonstrates how a **Data Engineer** can build a **streaming data pipeline** that ingests, transforms, and prepares descriptive SEC 10-K filings into a structured, searchable, and AI-ready dataset.
+The final output is to create a **Lakehouse architecture** that supports **Retrieval-Augmented Generation (RAG)** use cases — enabling AI applications or chatbots to retrieve factual, context-rich financial knowledge directly from company filings.
 
 ---
 
 ## Objectives
 
-- Build a **streaming ingestion pipeline** for JSON-based SEC filings  
-- Transform and normalize raw financial data (Balance Sheet, Income Statement, Cash Flow)  
-- Convert structured data into **textual documents** suitable for AI models  
-- Generate **vector embeddings** and assemble a **Databricks Vector Search Index**
+- **Ingest** descriptive SEC filings (JSON format) using **Databricks Auto Loader** and Volumes 
+- **Normalize** and **clean narrative** sections (Item_1, Item_1A, Item_7, etc.) in the Silver Layer
+- Assemble **AI-ready documents** in the Gold Layer
+- **Embed** and **index** those documents in a **Databricks Vector Search Endpoint** for RAG and chatbot retrieval
 
 ---
 
@@ -27,5 +27,16 @@ The final output is a **Lakehouse architecture** that supports **Retrieval-Augme
 
 ---
 
+## Tech Stack
+
+- Databricks Lakehouse Platform (Free Edition)
+- Delta Lake
+- Auto Loader (cloudFiles)
+- Unity Catalog & Volumes
+- Vector Search & Embeddings
+- PySpark / Databricks Notebooks
+
+---
+
 ## Datasets
-SEC Financial Reports: https://www.kaggle.com/datasets/pranjalverma08/sec-edgar-annual-financial-filings-2021
+Source: https://www.kaggle.com/datasets/pranjalverma08/sec-edgar-annual-financial-filings-2021
