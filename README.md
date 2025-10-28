@@ -28,4 +28,4 @@ The final output is a **Lakehouse architecture** that supports **Retrieval-Augme
 ---
 
 ## Datasets
-SEC Financial Reports: https://www.kaggle.com/datasets/finnhub/reported-financials
+SEC Financial Reports: https://www.kaggle.com/datasets/pranjalverma08/sec-edgar-annual-financial-filings-2021
